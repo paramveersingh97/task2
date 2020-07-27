@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* CSS reset */
+            margin: 0px;
+            padding: 0px;
+            background: url("img/barbell.jpg");
+            color: white;
+            background-size: 100%;
+            font-family: 'Lobster', cursive;
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            /* margin:2px; */
+
+            position: absolute;
+            left: 16px;
+            top: 15px;
+        }
+
+        .mid {
+            /* border: 2px solid yellow; */
+            /* margin:2px; */
+            display: block;
+            /* position: absolute; */
+            width: 40%;
+            margin: 40px auto;
+        }
+
+        .right {
+            /* border: 2px solid green; */
+            /* margin:2px; */
+            display: inline-block;
+            position: absolute;
+            top: 31px;
+            right: 41px
+        }
+
+        .navbar li {
+
+            display: inline-block;
+        }
+
+        .navbar li a {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            /* box-sizing: border-box; */
+            padding: 15px;
+            /* border:2px solid red; */
+        }
+
+        .active:hover,
+        .active:active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img {
+            width: 46px;
+            margin: 0px 45px;
+
+        }
+
+        .name {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 34px
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 5px 12px;
+            margin: 0px 9px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Lobster', cursive;
+        }
+
+        .btn:hover {
+            color: grey;
+            font-weight: bold;
+        }
+
+        .container {
+            border: 1px solid rgba(218, 193, 193, 0.808);
+            margin: 123px 98px;
+            width: 27%;
+            padding: 33px 25px;
+            border-radius: 10px;
+        }
+        .form-group input{
+            font-family: 'Lobster', cursive;
+            display: block;
+            width: 80%;
+            text-align: center;
+            margin: 15px auto;
+            padding: 4px 10px;
+            background-color: transparent;
+            color: white;
+            border:1px solid  white;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        .form-group input:hover,.form-group input:active{
+            border: 2px solid white;
+            
+        }
+        .form-group button{
+            display: block;
+            width: 85%;
+            text-align: center;
+            margin: 15px auto;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+        .form-group button:hover{
+            background-color: white;
+            border:2px solid black;
+            color:black;
+        }
+        .container h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <!-- left box for logo  -->
+            <img src="img/logo.jpg" alt="logo">
+            <div>
+                Health is wealth
+            </div>
+        </div>
+
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar ">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#" class="active">About Us</a></li>
+                <li> <a href="#" class="active">Fitness Calculator</a></li>
+                <li> <a href="#" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <!-- right boc for buttons -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Join immediately</h1>
+        <form action="nothing.php">
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter your Name">
+           </div>
+
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter your Age">
+           </div>
+
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter your Gender">
+           </div>
+
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter your Address">
+           </div>
+
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter your Mobile Number">
+           </div>
+
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter your Email Address">
+           </div>
+
+           <div class="form-group">
+               <button class="btn">Submit</button>
+
+           </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
